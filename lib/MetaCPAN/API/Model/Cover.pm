@@ -17,8 +17,6 @@ sub find_release_coverage {
             size  => 999,
         }
     );
-    use DDP;
-    p $res;
     $res->{hits}{total} or return {};
 
     return +{
